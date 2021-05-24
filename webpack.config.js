@@ -25,7 +25,8 @@ module.exports = {
 
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./index.html"
+            template: "./index.html",
+            inject: true
         })
     ]
 };
