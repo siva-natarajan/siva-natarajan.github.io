@@ -1,6 +1,6 @@
 import * as ReactDOM from 'react-dom';
 import * as React from 'react';
-import { Footer } from './containers/Footer';
+import topbar from './components/topbar/topbar';
 
 export class App {
   constructor() {
@@ -8,7 +8,7 @@ export class App {
   }
 
   private render(): void {
-    ReactDOM.render(React.createElement(Footer, { app: this }), document.getElementById("root"));
+    ReactDOM.render(React.createElement(topbar, { app: this }), document.getElementById("root"));
   }
 }
 
