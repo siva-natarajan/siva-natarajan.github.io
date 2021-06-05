@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/siva-natarajan/siva-natarajan.github.io/issues"
   },
-  "homepage": "https://siva-natarajan.github.io/siva-natarajan.github.io",
+  "homepage": "https://siva-natarajan.github.io/siva-natarajan.github.io/",
   "dependencies": {
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
