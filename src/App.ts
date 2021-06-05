@@ -8,7 +8,10 @@ export class App {
   }
 
   private render(): void {
-    ReactDOM.render(React.createElement(topbar, { app: this }), document.getElementById("root"));
+    ReactDOM.render(
+        React.createElement(topbar, {app: this}),
+        document.getElementById('root'),
+    );
   }
 }
 

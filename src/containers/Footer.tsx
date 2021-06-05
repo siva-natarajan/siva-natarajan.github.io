@@ -1,5 +1,5 @@
-import * as React from "react";
-import { App } from "../App";
+import * as React from 'react';
+import {App} from '../App';
 
 export interface IMainProps {
   app: App; // Reference to our App.ts class
