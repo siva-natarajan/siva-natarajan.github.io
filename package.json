@@ -10,7 +10,8 @@
     "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "lint": "eslint src/**/**/*.tsx src/**/*.ts webpack.config.js --fix"
+    "lint": "eslint src/**/**/*.tsx src/**/*.ts webpack.config.js --fix",
+    "lintFix": "eslint src/**/**/*.tsx src/**/*.ts webpack.config.js"
   },
   "repository": {
     "type": "git",
