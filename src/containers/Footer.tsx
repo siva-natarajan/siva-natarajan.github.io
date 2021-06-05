@@ -11,6 +11,6 @@ export class Footer extends React.Component<IMainProps, {}> {
   }
 
   public render(): JSX.Element {
-    return <>Siva Natarajan Malathi</>;
+    return <>Siva Natarajan</>;
   }
 }
