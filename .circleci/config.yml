@@ -1,9 +1,33 @@
 version: 2.1
 
 jobs:
-  build:
+  build1:
     docker:
       - image: cimg/node:14.10.1
     steps:
       - checkout
       - run: echo "hello world"
+
+  build2:
+    docker:
+      - image: cimg/node:14.10.1
+    steps:
+      - checkout
+      - run: echo "hello second world"
+
+workflows:
+  theConcurrentOne:
+    jobs:
+      - build1
+      - build2
+  theSequenceOne:
+    jobs:
+      - build1
+      - build2
+  theScheduleOne:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+    jobs:
+      - build1
+      - build2
