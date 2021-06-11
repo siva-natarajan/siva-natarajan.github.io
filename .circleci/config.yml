@@ -29,10 +29,11 @@ workflows:
   theScheduleOne:
     triggers:
       - schedule:
-          cron: "* * * * *"
+          cron: "52 * * * *"
           filters:
             branches:
-              only: circle-project-setup
+              only:
+                - master
     jobs:
       - build1
       - build2
