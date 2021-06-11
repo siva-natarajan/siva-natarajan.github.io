@@ -23,8 +23,9 @@ workflows:
   theSequenceOne:
     jobs:
       - build1
+      - build2
         requires:
-          -build2
+          -build1
   theScheduleOne:
     triggers:
       - schedule:
