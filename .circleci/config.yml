@@ -29,7 +29,7 @@ workflows:
   theScheduleOne:
     triggers:
       - schedule:
-          cron: "52 * * * *"
+          cron: "54 * * * *"
           filters:
             branches:
               only:
