@@ -29,7 +29,7 @@ workflows:
   theScheduleOne:
     triggers:
       - schedule:
-          cron: "0 0 * * *"
+          cron: "0,40 * * * *"
           filters:
             branches:
               only: circle-project-setup
