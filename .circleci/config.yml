@@ -23,7 +23,7 @@ workflows:
   theSequenceOne:
     jobs:
       - build1
-      - build2
+      - build2:
         requires:
           - build1
   theScheduleOne:
